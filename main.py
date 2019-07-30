@@ -38,6 +38,7 @@ p.hbar(
         palette = OrRd8,
         factors = car_list
     ),
+    legend = 'Car',
     source = source
 )
 
@@ -53,6 +54,11 @@ hover.tooltips = """
 """
 
 p.add_tools(hover)
+
+#Add legend based on Car
+p.legend.orientation = 'vertical'
+p.legend.location = 'top_right'
+p.legend.label_text_font_size = '10px'
 
 #Show
 save(p)
